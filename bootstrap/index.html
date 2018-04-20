@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning Bootstrap</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Cute+Font|Montserrat" rel="stylesheet"> <!-- linking css file  -->
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburgermenu" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">BOOTSTRAP</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="hamburgermenu">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li> <!-- way to navigate to the element with id #<id> -->
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+	</nav>
+
+		<div class='container-fluid'> <!-- bootstrap class --> 
+			<div class="row"> <!-- main section  -->
+				<div class="col-sm-12 text-center jumbotron"> <!-- we cant have more than 12 columns in one row  -->
+					<h1>Hello world </h1>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quidem recusandae neque. Laborum cumque, accusantium! Fugit at ab, explicabo suscipit, tenetur non, facere, iure quas quaerat consequatur molestias perspiciatis expedita.</p>
+				</div>
+				<div class="col-sm-12">
+					<div class="col-sm-6">
+						<img class='img-responsive' src="images/img2.jpg" alt="image of norway">
+					</div>
+					<div class="col-sm-6">
+						<h2>This is Norway</h2>
+						<hr>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae voluptatibus illum minima eos dignissimos dolore blanditiis aspernatur consequuntur vitae, recusandae, iure itaque, nostrum sequi asperiores fugiat omnis ab voluptatum.</p>
+						<button class="btn btn-primary">Book a tour</button>
+					</div>
+				</div>
+			</div>
+
+			<div id='about' class="row jumbotron icons text-center"> <!-- for icon -->
+				<div class="col-sm-12">
+					<div class="col-sm-4">
+						<i class="fa fa-thumbs-up my-icon" aria-hidden="true"></i>
+						<hr>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="col-sm-4">
+						<i class="fa fa-telegram my-icon" aria-hidden="true"></i>
+						<hr>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="col-sm-4">
+						<i class="fa fa-info my-icon" aria-hidden="true"></i>
+						<hr>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div> 
+			</div>
+
+			<div id='services' class="row">
+				<div class="col-sm-8 col-sm-offset-2 bg-info"> <!-- setting up offset  -->
+					<h3 class="text-primary" style="font-size: 50px;">SERVICES</h3>
+					<ul class="list-group">
+						<li class="list-group-item text-center"> element 1</li>
+						<li class="list-group-item text-center"> element 1</li>
+						<li class="list-group-item text-center"> element 1</li>
+						<li class="list-group-item text-center"> element 1</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div id='contact' class="col-sm-8 col-sm-offset-2">
+
+					<form>
+					<!-- <legend>Form in bootstrap</legend>
+						<fieldset> -->
+							<h3 class="text-primary" style="font-size: 50px;">CONTACT FORM</h3>
+							<hr>
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" class="form-control"> <!-- form control makes beautiful input segment  -->
+							</div>
+							<div class="form-group">
+								<label>email</label>
+								<input type="email" class="form-control">
+							</div>
+							<div class="form-group">
+								<label>password</label>
+								<input type="password" class="form-control">
+							</div>
+							<div class="form-group">
+								<label><input type="checkbox">check me </label>
+							</div>
+							<div class="form-group">
+								<label><input type="radio">radio me  </label>
+							</div>
+							<button class="btn btn-danger">Submit</button>
+
+							<!-- </fieldset> -->
+					</form>
+
+
+				</div>
+			</div>
+		</div>
+
+			<!-- bootstrap tables -->
+			<div id='tablestrap' class="row">
+				<div class="container jumbotron">
+					<div class="col-sm-10 col-sm-offset-1">
+						<h3 class="text-primary text-center" style="font-size: 50px;">BOOTSTRAP TABLE</h3>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Contact</th>
+									<th>Email</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Satyam</td>
+									<td>+91-7697066634</td>
+									<td>satyamsoni@hotmail.co.uk</td>
+								</tr>
+								<tr>
+									<td>Vedika</td>
+									<td>+91-89xxxxxxxx</td>
+									<td>vedikasoni1411@gmail.com</td>
+								</tr>
+								<tr>
+									<td>Satyam</td>
+									<td>+91-7697066634</td>
+									<td>satyamsoni@hotmail.co.uk</td>
+								</tr>
+								<tr>
+									<td>Vedika</td>
+									<td>+91-89xxxxxxxx</td>
+									<td>vedikasoni1411@gmail.com</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		</body>
+		</html>

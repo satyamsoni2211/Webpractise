@@ -1,0 +1,19 @@
+.icons{
+  background-color: #b8cced;
+  margin-top: 20px;
+  border-radius: 0px!important; /*to override bootstrap features*/
+}
+.my-icon{
+  font-size: 50px;
+}
+
+.navbar{
+  border-radius : 0px;
+  margin-bottom: 0px;
+}
+h1,h2 {
+	font-family: Montserrat;
+}
+#tablestrap {
+	padding-top: 10px
+}

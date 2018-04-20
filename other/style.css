@@ -1,0 +1,43 @@
+h1{
+
+	color: red;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.norway:hover { /*property to class */
+
+	border: 5px solid #232528;
+}
+
+.norway{ /*property to class */
+
+	border: 5px solid #8cb5f7;
+}
+
+#heading2{ /*property to id*/
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px 20px;
+	background-color: #cbdaef;
+	text-transform: uppercase;
+	/*float: left;*/
+}
+
+.lists{
+	/*font-family: 'Cute Font', cursive;*/
+	background-color: #f7e6f5;
+	font-weight: normal;
+}
+
+.first_section{
+	background-color: #e5e5e5;
+	color: #000000;
+	padding: 2px;
+	margin: 2px;
+}
+
+#imagediv{
+	margin-top: 3px;
+	text-align: center;
+}
