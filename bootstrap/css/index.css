@@ -45,5 +45,9 @@ text-shadow: 3px 2px #c3c5c9;
 	font-size: 50px;
 }
 .gradient{
-background: linear-gradient( to right, #000, #333, #666);
+background: linear-gradient( to right, black, #4b4c4f);
+color: #666;
+}
+#modal{
+	color: #d9dadd;
 }
