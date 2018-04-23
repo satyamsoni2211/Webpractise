@@ -11,13 +11,13 @@
 	<link rel="stylesheet" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Cute+Font|Montserrat" rel="stylesheet"> <!-- linking css file  -->
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50"> <!-- data spy scrolling -->
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
+			<div class="navbarnavbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburgermenu" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -33,18 +33,83 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#about">About</a></li>
 					<li><a href="#services">Services</a></li> <!-- way to navigate to the element with id #<id> -->
-						<li><a href="#contact">Contact</a></li>
+					<li><a href="#contact">Contact</a></li>
+					
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 	</nav>
 
+
 		<div class='container-fluid'> <!-- bootstrap class --> 
+					<!-- carousel starts here  -->
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>Carousel Example</h2>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+
+							<div class="item active">
+								<img src="images/img1.jpg" alt="Los Angeles" style="width:100%;">
+								<div class="carousel-caption">
+									<h3 id="carhead">Los Angeles</h3>
+									<p>LA is always so much fun!</p>
+									<button class="btn btn-primary">More</button>
+								</div>
+							</div>
+
+							<div class="item">
+								<img src="images/img2.jpg" alt="Chicago" style="width:100%;">
+								<div class="carousel-caption">
+									<h3 id="carhead">Chicago</h3>
+									<p>Thank you, Chicago!</p>
+								</div>
+							</div>
+
+							<div class="item">
+								<img src="images/img3.jpg" alt="New York" style="width:100%;">
+								<div class="carousel-caption">
+									<h3 id="carhead">New York</h3>
+									<p>We love the Big Apple!</p>
+								</div>
+							</div>
+						</div>
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+
+				</div>
+
+			<!-- carousel ends here  -->
+			</div>
 			<div class="row"> <!-- main section  -->
 				<div class="col-sm-12 text-center jumbotron"> <!-- we cant have more than 12 columns in one row  -->
-					<h1>Hello world </h1>
+					<h1 style="text-shadow: 2px 2px;">Hello world </h1>
 					<hr>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quidem recusandae neque. Laborum cumque, accusantium! Fugit at ab, explicabo suscipit, tenetur non, facere, iure quas quaerat consequatur molestias perspiciatis expedita.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <i><strong> Cupiditate, quidem recusandae neque. Laborum cumque, accusantium!</strong></i> Fugit at ab, explicabo suscipit, tenetur non, facere, iure quas quaerat consequatur molestias perspiciatis expedita.</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quis consequatur voluptatibus atque consectetur! Nemo, fugiat, ab? Reiciendis voluptate non modi molestiae veritatis officiis voluptates, accusantium consequuntur rerum, repellendus magni.
+						<blockquote> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+						Voluptatibus eos, iure voluptates nam mollitia deleniti error fuga nobis soluta 
+						
+						</blockquote>
+						laudantium velit corrupti distinctio labore earum, iusto neque nisi dolores perspiciatis.
+					</p>
 				</div>
 				<div class="col-sm-12">
 					<div class="col-sm-6">
@@ -53,7 +118,7 @@
 					<div class="col-sm-6">
 						<h2>This is Norway</h2>
 						<hr>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae voluptatibus illum minima eos dignissimos dolore blanditiis aspernatur consequuntur vitae, recusandae, iure itaque, nostrum sequi asperiores fugiat omnis ab voluptatum.</p>
+						<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repudiandae voluptatibus illum minima eos dignissimos dolore blanditiis aspernatur consequuntur vitae, recusandae, iure itaque, nostrum sequi asperiores fugiat omnis ab voluptatum.</p>
 						<button class="btn btn-primary">Book a tour</button>
 					</div>
 				</div>
@@ -79,9 +144,12 @@
 				</div> 
 			</div>
 
-			<div id='services' class="row">
-				<div class="col-sm-8 col-sm-offset-2 bg-info"> <!-- setting up offset  -->
-					<h3 class="text-primary" style="font-size: 50px;">SERVICES</h3>
+			<div id='services' class="row text-center"  > <!--  inline styling  style="background-image: url('images/img2.jpg'); background-attachment: fixed;"-->
+				<div class="col-sm-8 col-sm-offset-2 table-bordered"> <!-- setting up offset  -->
+					<h3 style="font-size: 50px; color: white;">SERVICES</h3>
+					<!-- <img src="images/img2.jpg" class="text-center">this is imgae
+					<br> -->
+					<br><br><br><br>
 					<ul class="list-group">
 						<li class="list-group-item text-center"> element 1</li>
 						<li class="list-group-item text-center"> element 1</li>
@@ -92,12 +160,12 @@
 			</div>
 
 			<div class="row">
-				<div id='contact' class="col-sm-8 col-sm-offset-2">
+				<div id='contact' class="col-sm-8 col-sm-offset-2 table-bordered">
 
 					<form>
 					<!-- <legend>Form in bootstrap</legend>
 						<fieldset> -->
-							<h3 class="text-primary" style="font-size: 50px;">CONTACT FORM</h3>
+							<h3 id='cf' class="text-primary text-center" >CONTACT FORM</h3>
 							<hr>
 							<div class="form-group">
 								<label>Name</label>
@@ -128,7 +196,7 @@
 		</div>
 
 			<!-- bootstrap tables -->
-			<div id='tablestrap' class="row">
+			<div id='tablestrap' class="row gradient">
 				<div class="container jumbotron">
 					<div class="col-sm-10 col-sm-offset-1">
 						<h3 class="text-primary text-center" style="font-size: 50px;">BOOTSTRAP TABLE</h3>
@@ -165,6 +233,55 @@
 						</table>
 					</div>
 				</div>
+			</div>
+			 <!-- creating panel -->
+			<div class="container-fluid my-panel">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 id='pan'>This is cool panel</h3>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste numquam, in consectetur amet odit nam eligendi aliquid repellendus. Voluptatibus perferendis placeat quaerat consequuntur dolor, ad a! Laudantium est, maxime blanditiis.
+							</div>
+							<div class="panel-footer">
+								<button class="btn btn-danger" for><i class="fa fa-telegram" aria-hidden="true"></i> More info</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 id='pan'>This is cool panel</h3>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste numquam, in consectetur amet odit nam eligendi aliquid repellendus. Voluptatibus perferendis placeat quaerat consequuntur dolor, ad a! Laudantium est, maxime blanditiis.
+							</div>
+							<div class="panel-footer">
+								<button class="btn btn-primary" for><i class="fa fa-telegram" aria-hidden="true"></i> More info</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 id='pan'>This is cool panel</h3>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste numquam, in consectetur amet odit nam eligendi aliquid repellendus. Voluptatibus perferendis placeat quaerat consequuntur dolor, ad a! Laudantium est, maxime blanditiis.
+							</div>
+							<div class="panel-footer">
+								<button class="btn btn-info" type="Submit"><i class="fa fa-telegram" aria-hidden="true"></i> More info</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer jumbotron">
+				<footer class="modal-footer">
+				&copy; 2017 | Satyam Soni All Rights Reserved.
+			</footer>
 			</div>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

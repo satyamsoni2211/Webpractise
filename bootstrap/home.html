@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+	<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburgermenu" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">JEWEL HOME</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="hamburgermenu">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li> <!-- way to navigate to the element with id #<id> -->
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav> <!-- navigation bar -->
+
+		<div class="container-fluid" style="padding-top: 100px">
+			
+			<div id='about' class="row icons text-center" style="padding-bottom: 10px;"> <!-- for icon -->
+				<div class="col-sm-12">
+					<div class="col-sm-4">
+						<a href="https://google.com" target="_blank"><i class="fa fa-thumbs-up my-icon" aria-hidden="true"></i></a>
+					</div>
+					<div class="col-sm-4">
+						<i class="fa fa-telegram my-icon" aria-hidden="true"></i>
+					</div>
+					<div class="col-sm-4">
+						<i class="fa fa-info my-icon" aria-hidden="true"></i>
+					</div>
+				</div> 
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12">
+					<img src="images/img2.jpg" class="img-rounded img-responsive" style="height: 100px; width: 100%">
+					<hr>
+				</div>
+			</div>
+			<div class="row" style="padding-top: 10px">
+				<div class="col-sm-5">
+					<h2 class="text-center"> Search record</h2>
+					<form action="success.html" name='form1' id="form1" method="post">
+						<div class="form-group">
+							<input type="text" name="names" placeholder="Search" class="form-control">
+						</div>
+					</form>
+					<div class="form-group">
+						<button class="btn btn-primary" type="submit" form="form1" value="Submit">submit</button>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, voluptate doloremque iste magni. Mollitia eligendi magnam placeat. Reiciendis itaque assumenda ratione, delectus, quisquam obcaecati unde, sit alias quis dolor ipsa.</p>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1" style="border-left: 1px solid #ccc;">
+					<form action="success.html" method="get">
+						<fieldset>
+							<legend>Register new candidate</legend>
+							<div class='form-group'>
+								<label>Name</label>
+								<input type="textarea" name="name" class="form-control">
+							</div>
+							<div class='form-group'>
+								<label>Contact Number</label>
+								<input type="tel" name="contact" class="form-control">
+							</div>
+							<div class='form-group'>
+								<label>address</label>
+								<input type="textarea" name="adress" class="form-control">
+							</div>
+							<div class='form-group'>
+								<label>File</label>
+								<input type="file" name="file" class="form-control">
+							</div>
+							<div class='form-group'>
+								<input type="Submit" name="Register"  value='Register' class="btn btn-primary">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+
+			</div> <!-- main div ends -->
+			<hr>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<h3 class="text-center">please enter the details about you</h3>
+					<span id="responce"></span>
+					<!-- <label>Click</label> -->
+					<input type="button" class="btn btn-primary" onclick="addInput()" value="add">
+				</div>
+				<div class="col-sm-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ullam, ipsum repellat quibusdam temporibus, consequuntur culpa perferendis dignissimos quam possimus dolore tempora aspernatur a quos tenetur, porro, ut. Iusto, obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ullam, ipsum repellat quibusdam temporibus, consequuntur culpa perferendis dignissimos quam possimus dolore tempora aspernatur a quos tenetur, porro, ut. Iusto, obcaecati.</p>
+				</div>
+			</div>
+			</div>
+		
+
+
+		<script>
+		var countBox =1;
+		var boxName = 0;
+		function addInput()
+		{
+		     var boxName="textBox"+countBox; 
+		document.getElementById('responce').innerHTML+='<br/><input type="text" id="'+boxName+'" value="'+boxName+'" class="form-control" /><br/>';
+		     countBox += 1;
+		}
+		</script>
+	</body>
+	</html>

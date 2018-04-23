@@ -1,3 +1,14 @@
+#services{
+  margin-top: -50px;
+  padding: 200px 0px;
+  background-image: url('../images/img2.jpg'); 
+  background-attachment: fixed;
+  background-size: 100%;
+    background-repeat: no-repeat;
+  /*background-image: url('images/img2.jpg');*/
+  /*background-color: #82abed;*/
+}
+
 .icons{
   background-color: #b8cced;
   margin-top: 20px;
@@ -16,4 +27,23 @@ h1,h2 {
 }
 #tablestrap {
 	padding-top: 10px
+}
+.my-panel{
+padding : 2px;
+}
+#pan{
+text-shadow: 3px 2px #c3c5c9;
+}
+#carhead
+{  font-size: 50px;
+}
+.footer{
+  padding: 1px;
+}
+#cf{
+
+	font-size: 50px;
+}
+.gradient{
+background: linear-gradient( to right, #000, #333, #666);
 }
